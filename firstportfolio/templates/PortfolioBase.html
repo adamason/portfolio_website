@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Portfolio</title>
+	
+	<link rel="stylesheet" type="text/css" href="static/stylesheet.css"/>
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	
+	<script type="text/javascript" src="js/myjs.js"></script>
+</head>
+<body>
+	<!-- <button class="btn btn-default" type="submit">CLIIIIICK</button> -->
+	<header>
+		<h1>Adam Mason</h1>
+		{% block h2_title %}{% endblock %}
+<!-- 	<div class = "header-container top">	
+		<h1 class="top-name col-md-4">Adam Mason</h1>
+		
+		<ul>
+		<! <div class ="logo-right toptext logo-wide"> Some Test text </div> -->
+	<!-- </div> -->
+	</header>
+
+
+	<div class = "nav container">
+		<nav>
+			<ul class="nav nav-tabs nav-justified">
+			 	<li><a href="/home.html" data-toggle="tab">Home</a></li>
+			 	<li><a href="/aboutme.html" data-toggle="tab">About me</a></li>
+				<li><a href="#" data-toggle="tab">Resume</a></li>
+				<li><a href="#" data-toggle="tab">Other</a></li>
+			</ul>
+		</nav>
+	</div>
+
+<!-- 		<div class="tab-content">
+  			<div id="home" class="tab-pane fade in active">
+    			<h3>HOME</h3>
+    			<p>Some content.</p>
+  			</div>
+  		<div id="menu1" class="tab-pane fade">
+    		<h3>Menu 1</h3>
+    		<p>Some content in menu 1.</p>
+  		</div>
+  	</div> -->
+<!-- 		<a href="index.html">{% if path == "/index.html" %} HOME {% else %} Home {% endif %}</a>
+			<a href="food.html">{% if path == "/food.html" %} FOOD {% else %} Food {% endif %}</a>
+			<a href="family.html">{% if path == "/family.html" %} FAMILY {% else %} Family {% endif %}</a>
+			<a href ="login.html">{% if path == "/login.html" %} LOGIN {% else %} Login {% endif %}</a>  -->
+		
+		{% block big_image %}{% endblock %}
+
+	<div class="jumbotron">
+    	<div class="container">
+    		<h1>Testing</h1>
+        		<p>My Portfolio</p>
+        		<a href="#">Do I need a link?</a>
+      	</div>
+    </div> 
+	
+	<div class="Testing-stuff">
+        <div class= "container-stuff">
+            <h2> This is a Test </h2>
+            <p> Not sure what bootstrap is?</p>
+            <div class = "row" >
+                <div class="col-md-4"> 
+                    <div class="thumbnail">
+                        <img src="http://www.artobsessions.com/colors_changing.jpg"/>
+                    </div> <!--This tag closes the first div thumbnail  -->
+                </div>
+            </div>
+        </div>
+    </div>
+	
+	{% block content %}
+	I should never see this content.  It should be replaced.
+	{% endblock %}
+	<footer>
+		<p>Copyright &copy; Adam Mason. Here is a link to the <a href = "http://usmi.umich.edu">UMSI webpage</a>.</p>
+	</footer>
+</body>
+</html>

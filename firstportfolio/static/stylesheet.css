@@ -1,0 +1,30 @@
+.pk {
+	float:right !important;
+}
+.jumbotron {
+	background-image:url('/static/Wales.jpg'); 
+	height: 500px;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.jumbotron h1{
+	padding-left: 0px;
+}
+
+header{
+	background-color: white;
+}
+
+.logo-right{
+	float:right !important;
+}
+
+.logo-wide{
+	letter-spacing: 4px;
+}
+
+h1 {
+	padding-left: 10px;
+}
+/*'http://imgur.com/a/J7kZJ'*/
