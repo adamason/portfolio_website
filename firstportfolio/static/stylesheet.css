@@ -31,7 +31,7 @@ h1 {
 	text-align: center;
 }
 .carousel {
-    margin-bottom: 60px;
+    margin-bottom: 25px;
     }
 .carousel .container {
    	position: relative;
@@ -64,6 +64,73 @@ h1 {
 .glyphicon {
 	margin-top: 250px;
 	font-size: 30px;
+}
+
+footer {
+	padding: 50px;
+	padding-left: 0px;
+	padding-bottom: 100px;
+	background-color: #f8f8f8;
+}
+
+h1 {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 500;
+    line-height: 33px;
+}
+
+.navbar-default .navbar-brand {
+    /*color: #3498db;*/
+    font-size: 25px;
+}
+
+/*.navbar-brand {
+    margin:0px;
+    padding: 0px;
+    height: 70px;
+    padding-top: 35px;
+}
+
+.navbar-nav li a {
+    line-height: 50px;
+    height: 70px;
+    padding-top: 0;
+}*/
+
+
+/*.navbar-right #nav-test > .active > li{
+	background-color:red;
+	color:blue;
+}*/
+
+
+/*li a:active {
+	background-color: red;
+	color: red;
+}*/
+
+/*.navbar-default .navbar-nav>li>a {
+	color: red;
+}*/
+
+/*.navbar-default .navbar-nav > .active >  a {
+    color: red;
+}
+
+a:active{
+	color: red;
+}*/
+
+.active li {
+    color: red;
+    background-color: red;
+}
+
+.navbar-default .navbar-nav>.active>a {
+    background-color: #2ecc71;
 }
 /*.carousel img {
 	position: absolute;
