@@ -62,6 +62,9 @@
                     <li>
                       <a href="/photos.html"> Photo Gallery</a>
                     </li>
+                    <li>
+                      <a href="#blog"> Blog? </a>
+                    </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -69,6 +72,8 @@
         <!-- /.container -->
     </nav>
   </header>
+
+{% block page_heading %}{% endblock %}
 
 <!-- 	<div class = "nav container">
 		<nav>
@@ -96,23 +101,21 @@
 			<a href="family.html">{% if path == "/family.html" %} FAMILY {% else %} Family {% endif %}</a>
 			<a href ="login.html">{% if path == "/login.html" %} LOGIN {% else %} Login {% endif %}</a>  -->
 		
-		{% block big_image %}{% endblock %}
+{% block big_image %}{% endblock %}
 
 
-
-<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-  <!-- Indicators -->
+<!-- <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  Indicators
   <ol class="carousel-indicators">
     <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
     <li data-target="#carousel-example-generic" data-slide-to="1"></li>
     <li data-target="#carousel-example-generic" data-slide-to="2"></li>
   </ol>
 
-  <!-- Wrapper for slides -->
+  Wrapper for slides
 	<div class="carousel-inner" role="listbox">
     <div class="item active">
       {% block slide_1 %}{% endblock %}
-      <!-- <img src="/static/Wales.jpg" alt="..."> -->
       <div class="carousel-caption">
          <h1> Slide 1</h1>
          <p> Sample Text 1 <p>
@@ -137,7 +140,7 @@
 
   </div>
 
-  <!-- Controls -->
+  Controls
   <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
     <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
     <span class="sr-only">Previous</span>
@@ -146,7 +149,9 @@
     <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
-</div>
+</div> -->
+
+
 <!-- 	<div class="jumbotron">
     	<div class="container">
     		<h1>Testing</h1>
@@ -165,9 +170,35 @@
                         <img class="center-block" src="http://www.artobsessions.com/colors_changing.jpg"/>
                     </div> <!--This tag closes the first div thumbnail  -->
                 </div>
+              <div class="col-md-8">
+                <h1>Basic Information</h1>
+                  <p>I want to test to the layout of this div conatiner</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-8">
+                <h1>Oppisite Side test</h1>
+                <p>Maybe some addiontal text</p>
+              </div>
+              <div class="col-md-4">
+                <div class="thumbnail">
+                  <img class="center-block" src="http://www.wallpapereast.com/static/images/Nature-Beautiful-Wallpapers-for-Desktop.jpg" alt="">
+                </div>
+              </div>
+            </div>
+          <div class = "row" >
+                <div class="col-md-4"> 
+                    <div class="thumbnail">
+                        <img class="center-block" src="http://i.imgur.com/kDogD4F.jpg"/>
+                    </div> <!--This tag closes the first div thumbnail  -->
+                </div>
+              <div class="col-md-8">
+                <h1>Last test</h1>
+                  <p>Third times a charmß</p>
+              </div>
             </div>
         </div>
-    </div>
+  </div>
 	
 	{% block content %}
 	I should never see this content.  It should be replaced.

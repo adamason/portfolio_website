@@ -1,3 +1,12 @@
+#about_me {
+    padding-left: 10px;
+}
+
+
+body {
+    padding-top:60px;
+}
+
 .pk {
 	float:right !important;
 }
@@ -64,6 +73,15 @@ h1 {
 .glyphicon {
 	margin-top: 250px;
 	font-size: 30px;
+}
+.carousel-caption {
+    right: 65%;
+    left: 0%;
+    padding-bottom: 30px;
+    bottom: 40%;
+/*    right: 20%;
+    left: 20%;
+    padding-bottom: 30px;*/
 }
 
 footer {
