@@ -1,11 +1,48 @@
 {%extends "templates/PortfolioBase.html" %}
 
-{% block page_heading %}
+<!-- {% block page_heading %}
 <div class="first-stuff">
 	<div class = "row" id ="about_me">
 		<h1> About me</h1>
 	</div>
 </div>
+
+{% endblock %}
+ -->
+{% block topper %} About me {% endblock %}
+
+{% block spotify %}
+<div class = "container" id ="music">
+	<div class = "row">
+		<div class = "col-md-10">
+			<h1>Music</h1>
+			<p>This is one playlist of the music that I have been listening too. I generally like all types of music.</p>
+		</div>
+		<div class = "col-md-2">
+			<iframe src="https://embed.spotify.com/?uri=spotify:album:3DiHrdZ5z0AqW6JTpLAKxG" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
+		</div>
+	</div>
+</div>
+{% endblock %}
+
+{% block head_1 %} About First{% endblock %}
+{% block para_1 %} I want to test the first container{% endblock %}
+
+{% block head_2 %} 2{% endblock %}
+{% block para_2 %}dfsadfsadf{% endblock %}
+
+{% block head_3 %}adsfadsfa{% endblock %}
+{% block para_3 %}asdfasdfsad{% endblock %}
+
+
+{% block jumbo %}
+<div class="jumbotron">
+    <div class="container myBackground">
+    	<h1>Headline</h1>
+        	<p>This is a test for more than a couple of words. This is to see how much text would look like on the screen</p>
+        	<a href="#">Do I need a link?</a>
+      	</div>
+    </div>
 
 {% endblock %}
 

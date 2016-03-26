@@ -47,7 +47,8 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right" id="nav">
-                    <li>
+            
+                    <li id = "firster" class = "george">
                         <a href="/home.html">Home</a>
                     </li>
                     <li>
@@ -73,7 +74,14 @@
     </nav>
   </header>
 
-{% block page_heading %}{% endblock %}
+<!-- {% block page_heading %}{% endblock %} -->
+
+<div class="first-stuff">
+  <div class = "row" id ="page_top">
+    <h1> {% block topper %}{% endblock %}</h1>
+  </div>
+</div>
+
 
 <!-- 	<div class = "nav container">
 		<nav>
@@ -151,6 +159,11 @@
   </a>
 </div> -->
 
+{% block jumbo %}{% endblock %}
+
+{% block progress %}{% endblock %}
+
+{% block spotify %}{% endblock %}
 
 <!-- 	<div class="jumbotron">
     	<div class="container">
@@ -162,8 +175,8 @@
 	
 	<div class="Testing-stuff">
         <div class= "container-stuff">
-            <h2 class = "title text-center"> This is a Test </h2>
-            <p class = "more-info text-center"> Not sure what bootstrap is?</p>
+<!--             <h2 class = "title text-center"> This is a Test </h2>
+            <p class = "more-info text-center"> Not sure what bootstrap is?</p> -->
             <div class = "row" >
                 <div class="col-md-4"> 
                     <div class="thumbnail">
@@ -171,14 +184,14 @@
                     </div> <!--This tag closes the first div thumbnail  -->
                 </div>
               <div class="col-md-8">
-                <h1>Basic Information</h1>
-                  <p>I want to test to the layout of this div conatiner</p>
+                <h1>{% block head_1 %}{% endblock %}</h1>
+                  <p>{% block para_1 %}{% endblock %}</p>
               </div>
             </div>
             <div class="row">
               <div class="col-md-8">
-                <h1>Oppisite Side test</h1>
-                <p>Maybe some addiontal text</p>
+                <h1>{% block head_2 %}{% endblock %}</h1>
+                <p>{% block para_2 %}{% endblock %}</p>
               </div>
               <div class="col-md-4">
                 <div class="thumbnail">
@@ -193,8 +206,8 @@
                     </div> <!--This tag closes the first div thumbnail  -->
                 </div>
               <div class="col-md-8">
-                <h1>Last test</h1>
-                  <p>Third times a charmß</p>
+                <h1>{% block head_3 %}{% endblock %}</h1>
+                  <p>{% block para_3 %}{% endblock %}</p>
               </div>
             </div>
         </div>
@@ -213,7 +226,18 @@
 <script src="js/bootstrap.min.js"></script>	
 
 <script>
+  $('li').each(function(){
+    if(window.location.href.indexOf($(this).find('a:first').attr('href'))>-1)
+    {
+    $(this).addClass('active').siblings().removeClass('active');
+    }
+});
+</script>
+
+<script>
 $(function(){
+  
+  var path = "first"
   function stripTrailingSlash(str) {
     if(str.substr(-1) == '/') {
       return str.substr(0, str.length - 1);
@@ -227,12 +251,21 @@ $(function(){
   $('.nav li a').each(function(){  
     var currentPage = stripTrailingSlash($(this).attr('href'));
 
+    console.log(url);
     if (activePage == currentPage) {
       $(this).parent().addClass('active'); 
+
     } 
+    else if (url == "/") {
+      document.getElementById("firster").className = "active";
+    }
   });
 });
 </script>
+
+<!-- document.getElementById('focusme').focus(); -->
+
+
 
 </body>
 </html>

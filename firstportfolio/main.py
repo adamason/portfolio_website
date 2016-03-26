@@ -28,9 +28,9 @@ class OneHandler(webapp2.RequestHandler):
 class IndexHandler(webapp2.RequestHandler):
     def get(self):
     	#Load index html for first page ('/')
-        template = JINJA_ENVIRONMENT.get_template('templates/PortfolioBase.html')
+        template = JINJA_ENVIRONMENT.get_template('templates/home.html')
         #Set 'path' to /index.html to reference in base
-        self.response.write(template.render({'path': '/index.html'}))
+        self.response.write(template.render({'path': '/home.html'}))
 
 #Handler for Login page 
 class FormHandler(webapp2.RequestHandler):
