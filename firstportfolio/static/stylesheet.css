@@ -11,10 +11,10 @@
    /* text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;*/
 }
 
-.first-stuff{
+/*.first-stuff{
     margin-left: 0px;
     margin-right: 0px;
-}
+}*/
 
 
 body {
@@ -176,6 +176,24 @@ a:active{
 
 .navbar-default .navbar-nav>.active>a {
     background-color: #23B684;
+}
+
+@media(min-width: 1200px) {
+    .container {
+    width: 100%;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+    width: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+    width: 100%;
+    }
 }
 /*.carousel img {
 	position: absolute;
