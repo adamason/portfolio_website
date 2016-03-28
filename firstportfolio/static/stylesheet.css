@@ -195,6 +195,18 @@ a:active{
     width: 100%;
     }
 }
+
+.goog-te-banner-frame {
+    /*bottom:0px;*/
+    top:unset;
+    background-color: white;
+    background-image: unset;
+}
+
+body.goog-te-banner {
+    background-image: unset;
+    background-color: white;
+}
 /*.carousel img {
 	position: absolute;
     top: 0;
