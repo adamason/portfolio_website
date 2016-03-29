@@ -4,11 +4,15 @@
 }*/
 #page_top {
     padding-left: 10px;
-    background: #23B684;
+    /*background: #23B684;*/
+    background: #00274c;
+    border: solid 2px #B1A65B;
 }
 #page_top h1 {
     color: white;
    /* text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;*/
+   border-left: solid #ffcb0b; 
+   border-right: solid #ffcb0b; 
 }
 
 /*.first-stuff{
@@ -58,9 +62,9 @@ header{
 	letter-spacing: 4px;
 }
 
-h1 {
+/*h1 {
 	padding-left: 10px;
-}
+}*/
 .text-center {
 	text-align: center;
 }
@@ -117,6 +121,7 @@ footer {
 	padding-left: 0px;
 	padding-bottom: 100px;
 	background-color: #f8f8f8;
+    border-top: solid 2px #ffcb0b;
 }
 
 h1 {
@@ -176,7 +181,8 @@ a:active{
 }
 
 .navbar-default .navbar-nav>.active>a {
-    background-color: #23B684;
+    /*background-color: #23B684;*/
+    background-color: #ffcb0b;
 }
 
 @media(min-width: 1200px) {
@@ -219,6 +225,10 @@ body.goog-te-banner {
 
 #calender {
     margin: 0px;
+}
+
+.thumbnail {
+    border:unset;
 }
 /*.carousel img {
 	position: absolute;

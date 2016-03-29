@@ -14,7 +14,15 @@ function googleTranslateElementInit() {
 	
 	<script type="text/javascript" src="js/myjs.js"></script>
 
+  <link rel="stylesheet" type="text/css" href="static/bootstrap-social.css"/>
+
+  <!-- <link rel="stylesheet" type="text/css" href="static/font-awesome.css"/> -->
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
 	<link rel="stylesheet" type="text/css" href="static/stylesheet.css"/>
+
+  <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 
 
 </head>
@@ -68,7 +76,7 @@ function googleTranslateElementInit() {
                       <a href="/photos.html"> Photo Gallery</a>
                     </li>
                     <li>
-                      <a href="#blog"> Blog? </a>
+                      <a href="/blog.html"> Blog? </a>
                     </li>
                 </ul>
             </div>
@@ -167,6 +175,8 @@ function googleTranslateElementInit() {
 
 {% block jumbo %}{% endblock %}
 
+{% block blog %}{% endblock %}
+
 {% block progress %}{% endblock %}
 
 {% block calender %}{% endblock %}
@@ -188,7 +198,8 @@ function googleTranslateElementInit() {
             <div class = "row main_stuff" >
                 <div class="col-md-4"> 
                     <div class="thumbnail">
-                        <img class="center-block" src="/static/Wales.jpg"/>
+                      {% block img_1 %}{% endblock %}
+                        <!-- <img class="center-block" src="/static/Wales.jpg"/> -->
                     </div> <!-- This tag closes the first div thumbnail -->  
                 </div>
               <div class="col-md-8">
@@ -203,14 +214,16 @@ function googleTranslateElementInit() {
               </div>
               <div class="col-md-4">
                 <div class="thumbnail">
-                  <img class="center-block" src="http://www.wallpapereast.com/static/images/Nature-Beautiful-Wallpapers-for-Desktop.jpg" alt="">
+                  <!-- <img class="center-block" src="http://www.wallpapereast.com/static/images/Nature-Beautiful-Wallpapers-for-Desktop.jpg" alt=""> -->
+                  {% block img_2 %}{% endblock %}
                 </div>
               </div>
             </div>
           <div class = "row main_stuff" >
                 <div class="col-md-4"> 
                     <div class="thumbnail">
-                        <img class="center-block" src="http://i.imgur.com/kDogD4F.jpg"/>
+                      {% block img_3 %}{% endblock %}
+                        <!-- <img class="center-block" src="http://i.imgur.com/kDogD4F.jpg"/> -->
                     </div> <!-- This tag closes the first div thumbnail   -->
                 </div>
               <div class="col-md-8">
@@ -233,6 +246,20 @@ function googleTranslateElementInit() {
       
       <div class = "col-md-8">
         <p> SOCIAL MEDIA ICONS GO HERE</p>
+          
+          <a href = "https://www.facebook.com/adam.mason.5680"class="btn btn-social-icon btn-facebook">
+            <span class="fa fa-facebook"></span>
+          </a>
+
+          <a href = "https://github.com/adamason/"class="btn btn-social-icon btn-github">
+            <span class="fa fa-github"></span>
+          </a>
+
+          <a href = "https://www.linkedin.com/in/adam-mason-49462bb0"class="btn btn-social-icon btn-linkedin">
+            <span class="fa fa-linkedin"></span>
+          </a>
+
+
       </div>
     </div>
 
