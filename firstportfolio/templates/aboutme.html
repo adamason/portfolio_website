@@ -10,6 +10,20 @@
 {% endblock %}
  -->
 {% block topper %} About me {% endblock %}
+	
+{% block calender %}
+<div class = "container calender" id = "calender">
+	<div class = "row">
+		<div class = "col-md-6">
+			<h1>Events</h1>
+			<p>This is a calender of some of the things that I plan on doing.</p>
+		</div>
+		<div class = "col-md-6">
+			<iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=umich.edu_cm8b7sur9k6dvofkic7jjqsvds%40group.calendar.google.com&amp;color=%2329527A&amp;ctz=America%2FNew_York" style="border-width:0" width="545" height="400" frameborder="0" scrolling="no"></iframe>
+		</div>
+	</div>
+</div>
+{% endblock %}
 
 {% block spotify %}
 <div class = "container spotify" id ="music">
@@ -25,14 +39,14 @@
 </div>
 {% endblock %}
 
-{% block head_1 %} About First{% endblock %}
-{% block para_1 %} I want to test the first container{% endblock %}
+{% block head_1 %} General Information{% endblock %}
+{% block para_1 %} I was recently accepted into the BSI program. I will also continue to persue a Spanish Minor.{% endblock %}
 
-{% block head_2 %} 2{% endblock %}
-{% block para_2 %}dfsadfsadf{% endblock %}
+{% block head_2 %} Hobbies{% endblock %}
+{% block para_2 %}I play the guitar and am currently learning the mandolin{% endblock %}
 
-{% block head_3 %}adsfadsfa{% endblock %}
-{% block para_3 %}asdfasdfsad{% endblock %}
+{% block head_3 %}Sports and Athletics{% endblock %}
+{% block para_3 %}I have played soccer since I was five years old. Now, I mostly run, hike, and mountain bike.{% endblock %}
 
 
 {% block jumbo %}

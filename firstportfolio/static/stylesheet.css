@@ -75,7 +75,7 @@ h1 {
     height: 80px;
     margin-top: 0;
     font-size: 120px;
-    text-shadow: 0 1px 1px rgba(0,0,0,.4);
+    /*text-shadow: 0 1px 1px rgba(0,0,0,.4);*/
     background-color: transparent;
     border: 0;
     z-index: 10;
@@ -109,6 +109,7 @@ h1 {
     padding-bottom: 30px;*/
     background-color: rgba(255,255,255, 0.5);
     color: inherit;
+    text-shadow:unset;
 }
 
 footer {
@@ -206,6 +207,18 @@ a:active{
 body.goog-te-banner {
     background-image: unset;
     background-color: white;
+}
+
+.bar-6 {
+    padding-top: 30px;
+}
+
+.main_stuff h1 {
+    margin-top: 0px;
+}
+
+#calender {
+    margin: 0px;
 }
 /*.carousel img {
 	position: absolute;

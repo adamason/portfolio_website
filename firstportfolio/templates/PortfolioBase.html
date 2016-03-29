@@ -169,6 +169,8 @@ function googleTranslateElementInit() {
 
 {% block progress %}{% endblock %}
 
+{% block calender %}{% endblock %}
+
 {% block spotify %}{% endblock %}
 
 <!-- 	<div class="jumbotron">
@@ -183,18 +185,18 @@ function googleTranslateElementInit() {
         <div class= "container second-stuff">
 <!--             <h2 class = "title text-center"> This is a Test </h2>
             <p class = "more-info text-center"> Not sure what bootstrap is?</p> -->
-            <div class = "row" >
+            <div class = "row main_stuff" >
                 <div class="col-md-4"> 
                     <div class="thumbnail">
                         <img class="center-block" src="/static/Wales.jpg"/>
-                    </div> This tag closes the first div thumbnail  
+                    </div> <!-- This tag closes the first div thumbnail -->  
                 </div>
               <div class="col-md-8">
                 <h1>{% block head_1 %}{% endblock %}</h1>
                   <p>{% block para_1 %}{% endblock %}</p>
               </div>
             </div>
-            <div class="row">
+            <div class="row main_stuff">
               <div class="col-md-8">
                 <h1>{% block head_2 %}{% endblock %}</h1>
                 <p>{% block para_2 %}{% endblock %}</p>
@@ -205,11 +207,11 @@ function googleTranslateElementInit() {
                 </div>
               </div>
             </div>
-          <div class = "row" >
+          <div class = "row main_stuff" >
                 <div class="col-md-4"> 
                     <div class="thumbnail">
                         <img class="center-block" src="http://i.imgur.com/kDogD4F.jpg"/>
-                    </div> This tag closes the first div thumbnail  
+                    </div> <!-- This tag closes the first div thumbnail   -->
                 </div>
               <div class="col-md-8">
                 <h1>{% block head_3 %}{% endblock %}</h1>
@@ -223,11 +225,16 @@ function googleTranslateElementInit() {
 	I should never see this content.  It should be replaced.
 	{% endblock %}
 	<footer>
-		<div class = "footer-container col-md-4">
-			<p>Copyright &copy; Adam Mason. Here is a link to the <a href = "http://umsi.umich.edu">UMSI webpage</a>.</p>
-		</div>
-
-    <div id="google_translate_element"></div>
+		<div class = "container footer-stuff">
+      <div class = "footer-container col-md-4">
+  			<p>Copyright &copy; Adam Mason. Here is a link to the <a href = "http://umsi.umich.edu">UMSI webpage</a>.</p>
+        <div id="google_translate_element"></div>
+  		</div>
+      
+      <div class = "col-md-8">
+        <p> SOCIAL MEDIA ICONS GO HERE</p>
+      </div>
+    </div>
 
 	</footer>
 
