@@ -41,6 +41,7 @@ body {
 	padding-left: 0px;
 }
 
+
 .myBackground {
   background-color: rgba(255,255,255, 0.5);
   color: inherit;
@@ -104,10 +105,11 @@ header{
 	font-size: 30px;
 }
 .carousel-caption {
-    right: 65%;
-    left: 0%;
+    right: 20%;
+    left: 15%;
     padding-bottom: 30px;
-    bottom: 40%;
+    bottom: 30%;
+    width:25%;
 /*    right: 20%;
     left: 20%;
     padding-bottom: 30px;*/
@@ -117,9 +119,9 @@ header{
 }
 
 footer {
-	padding: 50px;
+	padding: 25px;
 	padding-left: 0px;
-	padding-bottom: 100px;
+	padding-bottom: 50px;
 	background-color: #f8f8f8;
     border-top: solid 2px #ffcb0b;
 }
@@ -175,9 +177,12 @@ a:active{
 	color: red;
 }*/
 
-.active li {
-    color: red;
-    background-color: red;
+li:hover {
+    color: white;
+    background-color: #00274c;
+}
+a:hover {
+    color:white;
 }
 
 .navbar-default .navbar-nav>.active>a {
@@ -200,6 +205,25 @@ a:active{
 @media (min-width: 768px) {
     .container {
     width: 100%;
+    }
+
+    .alt_top {
+    display: none;
+}
+
+}
+
+@media (max-width: 768px) {
+    .thumbnail {
+        display:none;
+    }
+    #carousel-example-generic {
+        display:none;
+    }
+    .alt_top {
+        background-image:url('/static/Wales.jpg');
+        height: 250px;
+
     }
 }
 
@@ -227,8 +251,27 @@ body.goog-te-banner {
     margin: 0px;
 }
 
-.thumbnail {
+.no_border {
     border:unset;
+}
+
+.col-md-8 p {
+    font-size: 15pt;
+}
+
+.thumbnail img {
+    width: 300px;
+    height: 250px;
+}
+
+.enlarge img:hover {
+    height:350px;
+    width:500px;
+
+}
+
+.small_text {
+    font-size: 8pt;
 }
 /*.carousel img {
 	position: absolute;

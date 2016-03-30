@@ -3,6 +3,7 @@ import webapp2
 import os
 import logging
 import jinja2
+from google.appengine.api import mail
 
 #Set up JINJA to know where the template files are stored
 JINJA_ENVIRONMENT = jinja2.Environment(
@@ -55,9 +56,41 @@ class FormHandler(webapp2.RequestHandler):
             #Set error message and path for base template
             self.response.write(template.render({'Bad' : 'Bad credentials. Try again.', 'path' : '/login.html'}))
 
+class ConfirmUserSignup(webapp2.RequestHandler):
+    def get(self):
+        template = JINJA_ENVIRONMENT.get_template('templates/contactme.html')
+        self.response.write(template.render({'Load1' : 'Loaded 1st'}))
+    def post(self):
+
+        user_address = self.request.get("email_address")
+
+        if not mail.is_email_valid(user_address):
+            # prompt user to enter a valid address
+            template = JINJA_ENVIRONMENT.get_template('templates/contactme.html')
+            self.response.write(template.render({'TESTE' : 'NOPE'}))
+
+        else:
+            template = JINJA_ENVIRONMENT.get_template('templates/contactme.html')
+            self.response.write(template.render({'TESTE' : 'MADE ITTTT'}))
+
+            logging.info('***********email**********:' + str(user_address))
+            # confirmation_url = createNewUserConfirmation(self.request)
+            # sender_address = "Umich.edu Adam Mason <adamason@umich.edu>"
+            sender_address = "Umich.edu Adam Mason <adamason@umich.edu>"
+            subject = "Confirm Your Contact Info"
+            body = """
+Thank you for contacting me! Please confirm your email address by
+clicking on the link below:
+%s
+"""
+
+            mail.send_mail(sender_address, user_address, subject, body)
+
+
 app = webapp2.WSGIApplication([
     ('/', IndexHandler),
     ('/login.html', FormHandler),
+    ('/contactme.html', ConfirmUserSignup),
     ('/.*.html', OneHandler)
     
 ], debug=True)

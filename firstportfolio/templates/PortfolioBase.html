@@ -78,6 +78,9 @@ function googleTranslateElementInit() {
                     <li>
                       <a href="/blog.html"> Blog? </a>
                     </li>
+                    <li>
+                      <a href="/contactme.html"> Contact Me </a>
+                    </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -124,6 +127,8 @@ function googleTranslateElementInit() {
 			<a href ="login.html">{% if path == "/login.html" %} LOGIN {% else %} Login {% endif %}</a>  -->
 		
 {% block big_image %}{% endblock %}
+
+{% block alt %}{% endblock %}
 
 
 <!-- <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
@@ -172,6 +177,7 @@ function googleTranslateElementInit() {
     <span class="sr-only">Next</span>
   </a>
 </div> -->
+{% block gallery %}{% endblock %}
 
 {% block jumbo %}{% endblock %}
 
@@ -197,7 +203,7 @@ function googleTranslateElementInit() {
             <p class = "more-info text-center"> Not sure what bootstrap is?</p> -->
             <div class = "row main_stuff" >
                 <div class="col-md-4"> 
-                    <div class="thumbnail">
+                    <div class="thumbnail no_border">
                       {% block img_1 %}{% endblock %}
                         <!-- <img class="center-block" src="/static/Wales.jpg"/> -->
                     </div> <!-- This tag closes the first div thumbnail -->  
@@ -213,7 +219,7 @@ function googleTranslateElementInit() {
                 <p>{% block para_2 %}{% endblock %}</p>
               </div>
               <div class="col-md-4">
-                <div class="thumbnail">
+                <div class="thumbnail no_border">
                   <!-- <img class="center-block" src="http://www.wallpapereast.com/static/images/Nature-Beautiful-Wallpapers-for-Desktop.jpg" alt=""> -->
                   {% block img_2 %}{% endblock %}
                 </div>
@@ -221,7 +227,7 @@ function googleTranslateElementInit() {
             </div>
           <div class = "row main_stuff" >
                 <div class="col-md-4"> 
-                    <div class="thumbnail">
+                    <div class="thumbnail no_border">
                       {% block img_3 %}{% endblock %}
                         <!-- <img class="center-block" src="http://i.imgur.com/kDogD4F.jpg"/> -->
                     </div> <!-- This tag closes the first div thumbnail   -->
@@ -244,22 +250,27 @@ function googleTranslateElementInit() {
         <div id="google_translate_element"></div>
   		</div>
       
-      <div class = "col-md-8">
-        <p> SOCIAL MEDIA ICONS GO HERE</p>
-          
-          <a href = "https://www.facebook.com/adam.mason.5680"class="btn btn-social-icon btn-facebook">
+      <div class = "col-md-4">
+        <!-- <p> SOCIAL MEDIA ICONS GO HERE</p> -->
+          <p>Contact me on social media:</p>
+
+          <a href = "https://www.facebook.com/adam.mason.5680" class="btn btn-social-icon btn-facebook">
             <span class="fa fa-facebook"></span>
           </a>
 
-          <a href = "https://github.com/adamason/"class="btn btn-social-icon btn-github">
+          <a href = "https://github.com/adamason/" class="btn btn-social-icon btn-github">
             <span class="fa fa-github"></span>
           </a>
 
-          <a href = "https://www.linkedin.com/in/adam-mason-49462bb0"class="btn btn-social-icon btn-linkedin">
+          <a href = "https://www.linkedin.com/in/adam-mason-49462bb0" class="btn btn-social-icon btn-linkedin">
             <span class="fa fa-linkedin"></span>
           </a>
+          
+          <p class = "small_text"> (Remove ad-block to see all social media icons) </p>
+      </div>
 
-
+      <div class = "col-md-4">
+        <p>Maybe some other stuff</p>
       </div>
     </div>
 
