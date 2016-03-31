@@ -63,6 +63,8 @@ class ConfirmUserSignup(webapp2.RequestHandler):
     def post(self):
 
         user_address = self.request.get("email_address")
+        user_name = self.request.get("name")
+
 
         if not mail.is_email_valid(user_address):
             # prompt user to enter a valid address
@@ -76,14 +78,10 @@ class ConfirmUserSignup(webapp2.RequestHandler):
             logging.info('***********email**********:' + str(user_address))
             # confirmation_url = createNewUserConfirmation(self.request)
             # sender_address = "Umich.edu Adam Mason <adamason@umich.edu>"
-            sender_address = "Umich.edu Adam Mason <adamason@umich.edu>"
+            sender_address = "Adam Mason <adamason@umich.edu>"
             subject = "Confirm Your Contact Info"
-            body = """
-Thank you for contacting me! Please confirm your email address by
-clicking on the link below:
-%s
-"""
-
+            body = "Thank you for contacting me " + str(user_name) +"! Reply whenever you want to get in touch."
+# %s
             mail.send_mail(sender_address, user_address, subject, body)
 
 

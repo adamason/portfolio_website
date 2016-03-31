@@ -273,6 +273,37 @@ body.goog-te-banner {
 .small_text {
     font-size: 8pt;
 }
+
+.panel-color {
+    border-color: #00274c;
+}
+
+.panel-color > .panel-heading {
+    background: #00274c;
+}
+
+.panel-title {
+    color: white;
+}
+label {
+    color:#999;
+}
+
+.btn-u.btn-u-blue {
+    background: #00274c;
+}
+.btn-u {
+    color:white;
+    padding: 6px 13px;
+    border:0;
+}
+
+.form-control {
+    width: 100%;
+}
+.former {
+    margin-top: 20px;
+}
 /*.carousel img {
 	position: absolute;
     top: 0;

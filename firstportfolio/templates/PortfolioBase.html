@@ -181,6 +181,8 @@ function googleTranslateElementInit() {
 
 {% block jumbo %}{% endblock %}
 
+{% block contact %}{% endblock %}
+
 {% block blog %}{% endblock %}
 
 {% block progress %}{% endblock %}
@@ -197,7 +199,7 @@ function googleTranslateElementInit() {
       	</div>
     </div>  -->
 	
-	<div class="Testing-stuff">
+	<div class="Testing-stuff" id = "content_boxes">
         <div class= "container second-stuff">
 <!--             <h2 class = "title text-center"> This is a Test </h2>
             <p class = "more-info text-center"> Not sure what bootstrap is?</p> -->
@@ -316,6 +318,26 @@ $(function(){
   });
 });
 </script>
+
+<script>
+  $(function(){
+    var path = "first"
+    function stripTrailingSlash(str) {
+      if(str.substr(-1) == '/') {
+      return str.substr(0, str.length - 1);
+      }
+      return str;
+    }
+    var url = window.location.pathname;  
+    var activePage = stripTrailingSlash(url);
+
+    console.log(activePage)
+    if (activePage == "/contactme.html" || activePage == "/photos.html") {
+      document.getElementById( "content_boxes" ).style.display = 'none';
+    }
+  })
+</script>
+
 
 
 <!-- document.getElementById('focusme').focus(); -->
