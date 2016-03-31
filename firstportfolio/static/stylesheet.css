@@ -23,6 +23,8 @@
 
 body {
     padding-top:50px;
+    background-color: rgba(159, 180, 185, .15) !important;
+    color:#00274c;
 
 }
 
@@ -30,7 +32,7 @@ body {
 	float:right !important;
 }
 .jumbotron {
-	background-image:url('/static/Wales.jpg'); 
+	background-image:url('/static/golfire.jpg'); 
 	height: 500px;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -182,12 +184,16 @@ li:hover {
     background-color: #00274c;
 }
 a:hover {
-    color:white;
+    color:white !important;
 }
 
 .navbar-default .navbar-nav>.active>a {
     /*background-color: #23B684;*/
     background-color: #ffcb0b;
+}
+
+.navbar-default .navbar-nav>.active>a:hover {
+    background-color: #00274c;
 }
 
 @media(min-width: 1200px) {
@@ -221,7 +227,7 @@ a:hover {
         display:none;
     }
     .alt_top {
-        background-image:url('/static/Wales.jpg');
+        background-image:url('/static/big_house.JPG');
         height: 250px;
 
     }
@@ -245,6 +251,12 @@ body.goog-te-banner {
 
 .main_stuff h1 {
     margin-top: 0px;
+    border-top: #ffcb0b;
+
+}
+.main_stuff {
+    /*background-color: rgba(159, 180, 185, .15) !important;*/
+    border-top: #ffcb0b;
 }
 
 #calender {
@@ -262,6 +274,11 @@ body.goog-te-banner {
 .thumbnail img {
     width: 300px;
     height: 250px;
+    margin:0px !important;
+    
+}
+.thumbnail {
+    background-color: unset !important;
 }
 
 .enlarge img:hover {
@@ -304,6 +321,26 @@ label {
 .former {
     margin-top: 20px;
 }
+.navbar-default .navbar-nav>a:hover {
+    color:white !important;
+}
+
+.no-hover>a :hover{
+    color: unset !important;
+}
+
+.exception {
+    height: 300px !important;
+}
+.ps {
+    height: 225px !important;
+}
+.no-pad {
+    padding:0px !important;
+}
+/*.rotate {
+    transform:rotate(90deg);
+}*/
 /*.carousel img {
 	position: absolute;
     top: 0;

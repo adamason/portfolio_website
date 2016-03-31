@@ -1,5 +1,5 @@
 {%extends "templates/PortfolioBase.html" %}
-{% block topper %} Resume {% endblock %}
+{% block topper %} Skills {% endblock %}
 
 {% block progress %}
 <div class = "container progress-stuff">
@@ -11,8 +11,8 @@
 		<div class = "col-md-6 bar-6">
 			<div class="progress">
 			  <div class="progress-bar progress-bar-striped active" role="progressbar"
-			  aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%">
-			    CSS
+			  aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%">
+			    CSS and HTML
 			  </div>
 			</div>
 	
@@ -26,9 +26,18 @@
 			<div class="progress">
 			  <div class="progress-bar progress-bar-striped active" role="progressbar"
 			  aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%">
-			    C++
+			    C++ and Swift
 			  </div>
 			</div>
+
+			<div class="progress">
+			  <div class="progress-bar progress-bar-striped active" role="progressbar"
+			  aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%">
+			    Python
+			  </div>
+			</div>
+
+
 		</div>
 	</div>
 </div>
@@ -36,14 +45,15 @@
 
 {% block head_1 %} Excel{% endblock %}
 {% block para_1 %} I have used excel.{% endblock %}
+{% block img_1 %}<img class="center-block" src="/static/excel.png"/>{% endblock %}
 
 {% block head_2 %} Graphic Design{% endblock %}
 {% block para_2 %}Profiecny with Photoshop.{% endblock %}
+{% block img_2 %}<img class="center-block ps" src="/static/ps.jpg"/>{% endblock %}
 
 {% block head_3 %}C++ and Python{% endblock %}
 {% block para_3 %}I have also made a group dining hall app in Swift. Don't forget to add a resume PDF?{% endblock %}
+{% block img_3 %}<img class="center-block" src="/static/app.png"/>{% endblock %}
 
 {% block content %}
-		<p>
-			For a resume, progress bars, etc.</p>
 {% endblock %}
