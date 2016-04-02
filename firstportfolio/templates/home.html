@@ -17,7 +17,7 @@
 	<div class="carousel-inner" role="listbox">
     <div class="item active">
       <!-- <img src="http://www.wallpapereast.com/static/images/nature-best-hd-wallpapers.jpeg" alt="tet"> -->
-      <img src="/static/big_house.JPG" alt="tet">
+      <img src="/static/big_house.JPG" alt="Big House Picture">
       <div class="carousel-caption">
          <h1> University Of Michigan</h1>
          <p> Enrolled in BSI Program <p>
@@ -25,7 +25,7 @@
     </div>
     
     <div class="item">
-      <img src="/static/cliffs.JPG" alt="...">
+      <img src="/static/cliffs.JPG" alt="Ireland Cliffs">
       <div class="carousel-caption">
         <h1> Ireland Cliffs </h1>
         <p>Vacation two years ago</p>
@@ -33,7 +33,7 @@
     </div>
     
     <div class="item">
-      <img src="/static/sedona.JPG" alt="...">
+      <img src="/static/sedona.JPG" alt="Sedona Arizona">
       <div class="carousel-caption">
         <h1> Sedona </h1>
         <p>My trip last summer</p>
@@ -56,10 +56,10 @@
 
 {% block alt %}  
 <div class="jumbotron alt_top">
-    <div class="container">
-    	<h1>Testing</h1>
-        	<p>My Portfolio</p>
-        	<a href="#">Do I need a link?</a>
+    <div class="container myBackground">
+    	<h1>University of Michigan</h1>
+        	<p>Enrolled in BSI program</p>
+        	<!-- <a href="#">Do I need a link?</a> -->
     </div>
 </div> 
 
@@ -71,15 +71,15 @@
 
 {% block head_1 %} My Portfolio{% endblock %}
 {% block para_1 %} This is my first webpage styled with CSS and Bootstrap. I have used default bootstrap classes and have built upon them. For example, I have included a transparent white background over both my carousel and jumbo-tron.{% endblock %}
-{% block img_1 %}<img class="center-block exception" src="/static/2ndpro.jpg"/>{% endblock %}
+{% block img_1 %}<img class="center-block exception" src="/static/2ndpro.jpg" alt = "Picture of Me"/>{% endblock %}
 
 {% block head_2 %} Design Techniques{% endblock %}
 {% block para_2 %}I have mainly employed the use of Bootstrap with the grid system as well as resources like AwesomeFont for my soical media icons in my footer.{% endblock %}
-{% block img_2 %}<img class="center-block" src="/static/bootstrap-logo.png"/>{% endblock %}
+{% block img_2 %}<img class="center-block img-responsive" src="/static/bootstrap-logo.png" alt = "Bootstrap Logo"/>{% endblock %}
 
 {% block head_3 %}JavaScript and Other Features{% endblock %}
 {% block para_3 %} I have used the JS supplied with bootstrap and used functions to alter active states of links. The carousel and some other features also utilize the Javascript and Jquery. Some of the embedded features use their own scripts as well. Another example is that I used scripts to set elements to "display: none" when the URL was set to certain criteria.{% endblock %}
-{% block img_3 %}<img class="center-block" src="/static/logo_JavaScript.png"/>{% endblock %}
+{% block img_3 %}<img class="center-block" src="/static/logo_JavaScript.png" alt = "JavaScript Logo"/>{% endblock %}
 
 
 

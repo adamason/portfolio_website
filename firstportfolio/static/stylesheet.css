@@ -216,6 +216,12 @@ a:hover {
     .alt_top {
     display: none;
 }
+/*    .col-sm-6 {
+        float:unset !important;
+        right:unset !important;
+        width:unset !important;
+        position:unset !important;
+    }*/
 
 }
 
@@ -230,6 +236,10 @@ a:hover {
         background-image:url('/static/big_house.JPG');
         height: 250px;
 
+    }
+
+    .changer {
+        height: 250px;
     }
 }
 
@@ -268,6 +278,24 @@ a:hover {
     .collapse.in{
         display:block !important;
     }
+
+    .col-sm-4 {
+        float:unset !important;
+        width:unset !important;
+        position:unset !important;
+    }
+
+    .col-sm-8 {
+        float:unset !important;
+        position:unset !important;
+        width:unset !important;
+    }
+    .col-sm-6 {
+        float:unset !important;
+        position:unset !important;
+        width:unset !important;
+    }
+
 }
 
 .goog-te-banner-frame {
@@ -380,6 +408,7 @@ label {
     border-radius: 50%;
     width:80px; /* you can use % */
     height: auto;
+    margin:0 auto;
 }
 .img-circle2 {
     border-radius: 50%;
@@ -391,6 +420,20 @@ label {
     margin: 0 auto;
     text-align: center;
 }
+.bigtext {
+    font-size: 20pt;
+}
+
+a span.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+}
+/*.tiny {
+    font-size: .1px
+}*/
 /*.rotate {
     transform:rotate(90deg);
 }*/

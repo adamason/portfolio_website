@@ -72,14 +72,14 @@ class ConfirmUserSignup(webapp2.RequestHandler):
             self.response.write(template.render({'TESTE' : 'NOPE'}))
 
         else:
-            template = JINJA_ENVIRONMENT.get_template('templates/contactme.html')
+            template = JINJA_ENVIRONMENT.get_template('templates/success.html')
             self.response.write(template.render({'TESTE' : 'MADE ITTTT'}))
 
             logging.info('***********email**********:' + str(user_address))
             # confirmation_url = createNewUserConfirmation(self.request)
             # sender_address = "Umich.edu Adam Mason <adamason@umich.edu>"
             sender_address = "Adam Mason <adamason@umich.edu>"
-            subject = "Confirm Your Contact Info"
+            subject = "I recieved your Info"
             body = "Thank you for contacting me " + str(user_name) +"! Reply whenever you want to get in touch."
 # %s
             mail.send_mail(sender_address, user_address, subject, body)

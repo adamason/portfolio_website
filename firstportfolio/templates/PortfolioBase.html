@@ -55,7 +55,7 @@ function googleTranslateElementInit() {
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand topnav no-hover"><span><img class="img-circle2" src="/static/2ndpro.jpg"/></span> Adam Mason</a>
+                <a class="navbar-brand topnav no-hover"><span><img class="img-circle2" src="/static/2ndpro.jpg" alt = "picture of me"/></span> Adam Mason</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -126,7 +126,9 @@ function googleTranslateElementInit() {
 			<a href="food.html">{% if path == "/food.html" %} FOOD {% else %} Food {% endif %}</a>
 			<a href="family.html">{% if path == "/family.html" %} FAMILY {% else %} Family {% endif %}</a>
 			<a href ="login.html">{% if path == "/login.html" %} LOGIN {% else %} Login {% endif %}</a>  -->
-		
+	
+{% block success %}{% endblock %}
+
 {% block big_image %}{% endblock %}
 
 {% block alt %}{% endblock %}
@@ -204,44 +206,162 @@ function googleTranslateElementInit() {
         <div class= "container second-stuff">
 <!--             <h2 class = "title text-center"> This is a Test </h2>
             <p class = "more-info text-center"> Not sure what bootstrap is?</p> -->
-            <div class = "row main_stuff" >
+          <div class="content-section-b">
+            <div class="container">
+                <div class="row main_stuff">
+                  <div class="col-sm-push-4  col-sm-8">
+                    <!-- <hr class="section-heading-spacer"> -->
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">{% block head_1 %}You wont see this{% endblock %}</h2>
+                    <p class="lead bigtext">{% block para_1 %}You wont see this{% endblock %}</p>
+                </div>
+                <div class="col-sm-pull-8  col-sm-4">
+                  <div class = "thumbnail no_border">
+                    {% block img_1 %}{% endblock %}
+                  </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+
+
+
+    <div class="content-section-c">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-sm-8">
+                    <!-- <hr class="section-heading-spacer"> -->
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">{% block head_2 %}You wont see this{% endblock %}</h2>
+                    <p class="lead bigtext">{% block para_2 %}You wont see this{% endblock %}</p>
+                </div>
+                <div class="col-sm-4">
+                  <div class = "thumbnail no_border">
+                    {% block img_2 %}You wont see this{% endblock %}
+                  </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+    </div>
+          
+          <div class="content-section-b">
+            <div class="container">
+                <div class="row main_stuff">
+                  <div class="col-sm-push-4  col-sm-8">
+                    <!-- <hr class="section-heading-spacer"> -->
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">{% block head_3 %}You wont see this{% endblock %}</h2>
+                    <p class="lead bigtext">{% block para_3 %}You wont see this{% endblock %}</p>
+                </div>
+                <div class="col-sm-pull-8  col-sm-4">
+                  <div class = "thumbnail no_border">
+                    {% block img_3 %}You wont see this{% endblock %}
+                  </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+
+
+
+<!--             <div class = "row main_stuff" >
                 <div class="col-md-4"> 
                     <div class="thumbnail no_border">
-                      {% block img_1 %}{% endblock %}
-                        <!-- <img class="center-block" src="/static/Wales.jpg"/> -->
-                    </div> <!-- This tag closes the first div thumbnail -->  
+                      
+                        <img class="center-block" src="/static/Wales.jpg"/>
+                    </div> This tag closes the first div thumbnail  
                 </div>
               <div class="col-md-8">
-                <h1>{% block head_1 %}{% endblock %}</h1>
-                  <p>{% block para_1 %}{% endblock %}</p>
+                <h1>You wont see this anyway</h1>
+                  <p></p>
               </div>
             </div>
             <div class="row main_stuff">
               <div class="col-md-8">
-                <h1>{% block head_2 %}{% endblock %}</h1>
-                <p>{% block para_2 %}{% endblock %}</p>
+                <h1> replaced</h1>
+                <p></p>
               </div>
               <div class="col-md-4">
                 <div class="thumbnail no_border">
-                  <!-- <img class="center-block" src="http://www.wallpapereast.com/static/images/Nature-Beautiful-Wallpapers-for-Desktop.jpg" alt=""> -->
-                  {% block img_2 %}{% endblock %}
+                  <img class="center-block" src="http://www.wallpapereast.com/static/images/Nature-Beautiful-Wallpapers-for-Desktop.jpg" alt="">
+                  
                 </div>
               </div>
             </div>
           <div class = "row main_stuff" >
                 <div class="col-md-4"> 
                     <div class="thumbnail no_border">
-                      {% block img_3 %}{% endblock %}
-                        <!-- <img class="center-block" src="http://i.imgur.com/kDogD4F.jpg"/> -->
-                    </div> <!-- This tag closes the first div thumbnail   -->
+                      
+                        <img class="center-block" src="http://i.imgur.com/kDogD4F.jpg"/>
+                    </div> This tag closes the first div thumbnail  
                 </div>
               <div class="col-md-8">
-                <h1>{% block head_3 %}{% endblock %}</h1>
-                  <p>{% block para_3 %}{% endblock %}</p>
+                <h1> loser</h1>
+                  <p></p>
               </div>
             </div>
         </div>
-  </div>
+  </div> -->
+
+<!--       <div class="content-section-b">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-sm-push-4  col-sm-8">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">3D Device Mockups<br>by PSDCovers</h2>
+                    <p class="lead bigtext">Turn your 2D designs into high quality, 3D product shots in seconds using free Photoshop actions by <a target="_blank" href="http://www.psdcovers.com/">PSDCovers</a>! Visit their website to download some of their awesome, free photoshop actions!</p>
+                </div>
+                <div class="col-sm-pull-8  col-sm-4">
+                  <div class = "thumbnail no_border">
+                    <img class="center-block exception" src="static/2ndpro.jpg" alt="">
+                  </div>
+                </div>
+            </div>
+
+        </div>
+        /.container
+
+    </div>
+    /.content-section-b -->
+
+
+<!--         <div class="content-section-c">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-sm-8">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">3D Device Mockups<br>by PSDCovers</h2>
+                    <p class="lead bigtext">Turn your 2D designs into high quality, 3D product shots in seconds using free Photoshop actions by <a target="_blank" href="http://www.psdcovers.com/">PSDCovers</a>! Visit their website to download some of their awesome, free photoshop actions!</p>
+                </div>
+                <div class="col-sm-4">
+                  <div class = "thumbnail no_border">
+                    <img class="center-block exception" src="static/logo_JavaScript.png" alt="">
+                  </div>
+                </div>
+            </div>
+
+        </div>
+        /.container
+
+    </div> -->
+</div>
+</div>
 	
 	{% block content %}
 
@@ -257,16 +377,19 @@ function googleTranslateElementInit() {
         <!-- <p> SOCIAL MEDIA ICONS GO HERE</p> -->
           <p>Contact me on social media:</p>
 
-          <a href = "https://www.facebook.com/adam.mason.5680" class="btn btn-social-icon btn-facebook">
-            <span class="fa fa-facebook"></span>
+          <a href = "https://www.facebook.com/adam.mason.5680" class="btn btn-social-icon btn-facebook tiny">
+            <span class="fa fa-facebook"></span> <span class = "screen-reader-text">
+            Facebook</span>
           </a>
 
-          <a href = "https://github.com/adamason/" class="btn btn-social-icon btn-github">
-            <span class="fa fa-github"></span>
+          <a href = "https://github.com/adamason/" class="btn btn-social-icon btn-github tiny">
+            <span class="fa fa-github"></span><span class = "screen-reader-text">
+            Github</span>
           </a>
 
-          <a href = "https://www.linkedin.com/in/adam-mason-49462bb0" class="btn btn-social-icon btn-linkedin">
-            <span class="fa fa-linkedin"></span>
+          <a href = "https://www.linkedin.com/in/adam-mason-49462bb0" class="btn btn-social-icon btn-linkedin tiny">
+            <span class="fa fa-linkedin"></span><span class = "screen-reader-text">
+            LinkedIn</span>
           </a>
           
           <p class = "small_text"> (Remove ad-block to see all social media icons) </p>
@@ -276,7 +399,7 @@ function googleTranslateElementInit() {
         <p>Contact me at : adamason@umich.edu </p>
       </div>
       <div class = "col-md-1">
-        <img class="img-circle" src="/static/2ndpro.jpg">
+        <img class="img-circle" src="/static/2ndpro.jpg" alt = "picture of me"/>
       </div>
 
     </div>
@@ -342,7 +465,14 @@ $(function(){
     }
   })
 </script>
-
+ 
+ <script>
+   $('h1').each(function(){
+       if($(this).is(':empty')){
+         $(this).remove()
+       }
+    });
+</script>
 
 
 <!-- document.getElementById('focusme').focus(); -->
