@@ -2,6 +2,21 @@
     background: 134, 226, 213;
 
 }*/
+html, body {
+    height: 100%;
+}
+.wrapper {
+    min-height: 100%;
+    height: auto !important; 
+    height: 100%;
+    margin: 0 auto -155px; 
+}
+.footer, .push {
+    height: 155px; 
+}
+
+
+
 #page_top {
     padding-left: 10px;
     /*background: #23B684;*/
@@ -126,6 +141,8 @@ footer {
 	padding-bottom: 50px;
 	background-color: #f8f8f8;
     border-top: solid 2px #ffcb0b;
+
+
 }
 
 h1 {
@@ -142,48 +159,13 @@ h1 {
     font-size: 25px;
 }
 
-/*.navbar-brand {
-    margin:0px;
-    padding: 0px;
-    height: 70px;
-    padding-top: 35px;
-}
 
-.navbar-nav li a {
-    line-height: 50px;
-    height: 70px;
-    padding-top: 0;
-}*/
-
-
-/*.navbar-right #nav-test > .active > li{
-	background-color:red;
-	color:blue;
-}*/
-
-
-/*li a:active {
-	background-color: red;
-	color: red;
-}*/
-
-/*.navbar-default .navbar-nav>li>a {
-	color: red;
-}*/
-
-/*.navbar-default .navbar-nav > .active >  a {
-    color: red;
-}
-
-a:active{
-	color: red;
-}*/
 
 li:hover {
     color: white;
     background-color: #00274c;
 }
-a:hover {
+li > a:hover {
     color:white !important;
 }
 
@@ -196,6 +178,11 @@ a:hover {
     background-color: #00274c;
 }
 
+.last-change {
+    height:50% !important;
+    width: 50% !important;
+}
+
 @media(min-width: 1200px) {
     .container {
     width: 100%;
@@ -206,42 +193,11 @@ a:hover {
     .container {
     width: 100%;
     }
-}
-
-@media (min-width: 768px) {
-    .container {
-    width: 100%;
-    }
-
-    .alt_top {
-    display: none;
-}
-/*    .col-sm-6 {
-        float:unset !important;
-        right:unset !important;
-        width:unset !important;
-        position:unset !important;
-    }*/
-
-}
-
-@media (max-width: 768px) {
-    .thumbnail {
-        display:none;
-    }
-    #carousel-example-generic {
-        display:none;
-    }
-    .alt_top {
-        background-image:url('/static/big_house.JPG');
-        height: 250px;
-
-    }
-
-    .changer {
-        height: 250px;
+    .col-md-4 {
+        width:33.33333333% !important;
     }
 }
+
 
 @media (max-width: 992px) {
     .navbar-header {
@@ -296,7 +252,66 @@ a:hover {
         width:unset !important;
     }
 
+    .gally {
+        float:left !important;
+        width:50% !important;
+
+    }
+    .last-change {
+    height:25% !important;
+    width: 25% !important;
 }
+
+
+}
+
+@media (min-width: 768px) {
+    .container {
+    width: 100%;
+    }
+
+    .alt_top {
+    display: none;
+}
+
+/*    .col-sm-6 {
+        float:unset !important;
+        right:unset !important;
+        width:unset !important;
+        position:unset !important;
+    }*/
+
+}
+
+@media (max-width: 768px) {
+/*    .no_border {
+        display:none;
+    }*/
+    #carousel-example-generic {
+        display:none;
+    }
+    .alt_top {
+        background-image:url('/static/big_house.JPG');
+        height: 250px;
+
+    }
+
+    .changer {
+        height: 250px;
+    }
+    .col-md-4 {
+        width: 50% !important;
+    }
+    .gally {
+        width:100% !important;
+    }
+
+    .dnone {
+        display:none !important;
+    }
+
+}
+
 
 .goog-te-banner-frame {
     /*bottom:0px;*/
@@ -344,6 +359,14 @@ body.goog-te-banner {
 }
 .thumbnail {
     background-color: unset !important;
+    text-align:center;
+    float: none !important;
+    display: block;
+
+}
+
+.thumbnail > img {
+    display:inline-block !important;
 }
 
 .enlarge img:hover {
@@ -409,6 +432,7 @@ label {
     width:80px; /* you can use % */
     height: auto;
     margin:0 auto;
+    display:block;
 }
 .img-circle2 {
     border-radius: 50%;
@@ -431,6 +455,21 @@ a span.screen-reader-text {
     width: 1px;
     overflow: hidden;
 }
+.footer-container {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.calendar_obselete {
+    border-width:0 !important; 
+    width:100% !important; 
+    height:250px !important; 
+    frameborder:0 !important;
+    scrolling:no !important;
+}
+
+
 /*.tiny {
     font-size: .1px
 }*/
